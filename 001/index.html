@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Souza" />
+    <meta name="description" content="Player de música do desafio #boraCodar da Rocketseat."/>
+    <meta name="keywords" content="Player, Música, Rocky Balboa, Desenvolvimento, Tecnologia, Front-End">
+    <title>Player de música | #boraCodar</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    
+    <main>
+        <!-- CARD ONE -->
+        <div class="card one">
+            <div class="top">
+                <div class="card-img one"></div>
+
+                <div class="card-texts one">
+                    <h2 class="name-music">Title</h2>
+                    <p class="artist">Artist</p>
+                </div>
+            </div>
+
+            <div class="middle">
+                <div class="card-buttons one">
+                    <ion-icon name="play-skip-back" class="back"></ion-icon>
+                    <ion-icon name="play" class="play-pause"></ion-icon>
+                    <ion-icon name="play-skip-forward" class="next"></ion-icon>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="music-timer one">
+                    <div class="progress-bar-music">
+                        <input id="progress-bar-music-one" type="range" min="0" max="0" step="1" value="0">
+                    </div>
+
+                    <div class="time one">
+                        <div class="current-time">00:00</div>
+                        <div class="total-time">00:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD TWO -->
+        <div class="card two">
+            <div class="top">
+                <div class="card-img two"></div>
+
+                <div class="card-texts two">
+                    <h2 class="name-music">Title</h2>
+                    <p class="artist">Artist</p>
+                </div>
+            </div>
+
+            <div class="middle">
+                <div class="card-buttons two">
+                    <ion-icon name="play-skip-back" class="back"></ion-icon>
+                    <ion-icon name="play" class="play-pause"></ion-icon>
+                    <ion-icon name="play-skip-forward" class="next"></ion-icon>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="music-timer two">
+                    <div class="progress-bar-music">
+                        <input id="progress-bar-music-two" type="range" min="0" max="0" step="1" value="0">
+                    </div>
+
+                    <div class="time two">
+                        <div class="current-time">00:00</div>
+                        <div class="total-time">00:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD THREE -->
+        <div class="card three">
+            <div class="top">
+                <div class="card-img three"></div>
+
+                <div class="card-texts three">
+                    <h2 class="name-music">Title</h2>
+                    <p class="artist">Artist</p>
+                </div>
+            </div>
+
+            <div class="middle">
+                <div class="card-buttons three">
+                    <ion-icon name="play-skip-back" class="back"></ion-icon>
+                    <ion-icon name="play" class="play-pause"></ion-icon>
+                    <ion-icon name="play-skip-forward" class="next"></ion-icon>
+                </div>
+            </div>
+
+            <div class="bottom sr-only">
+                <div class="music-timer three">
+                    <div class="progress-bar-music">
+                        <input id="progress-bar-music-three" type="range" min="0" max="0" step="1" value="0">
+                    </div>
+
+                    <div class="time three">
+                        <div class="current-time">00:00</div>
+                        <div class="total-time">00:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/scripts/index.js" type="module"></script>
+</body>
+</html>

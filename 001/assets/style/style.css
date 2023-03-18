@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --gray-color: #202020;
+    --light-gray: #C1BFC4;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #F7F6F4;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    place-content: center;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: 
+    'A B'
+    'A C';
+    gap: 3.2rem;
+    height: 100%;
+}
+
+/* ======================================================================== */
+
+/* CSS TRICKS */
+
+.sr-only {
+    position: absolute;
+    width: 0.625rem;
+    height: 0.625rem;
+    padding: 0;
+    margin: -0.625rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border-width: 0;
+    white-space: nowrap;
+} 
+
+/* ======================================================================== */
+
+/* ============
+   GLOBAL STYLE
+   ============
+*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2.9rem;
+    background-color: #FFF;
+    border-radius: .960297rem;
+    box-shadow: 0 .2rem .2rem 0 rgba(0, 0, 0, 0.12),
+        0 .3rem .1rem -.2rem rgba(0, 0, 0, 0.12),
+        0 .1rem .5rem 0 rgba(0, 0, 0, 0.2);
+    color: var(--gray-color);
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 2.9rem;
+}
+
+.card-img {
+    border-radius: .6rem;
+}
+
+.name-music {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.artist {
+    font-size: 1.9rem;
+}
+
+.card-buttons,
+.card-buttons ion-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-color);
+    font-size: 2.9rem;
+}
+
+.card-buttons ion-icon:nth-child(1):is(:hover),
+.card-buttons ion-icon:nth-child(2):is(:hover),
+.card-buttons ion-icon:nth-child(3):is(:hover) {
+    opacity: .9;
+    cursor: pointer;
+}
+
+.music-timer audio {
+    width: 100%;
+}
+
+.progress-bar-music input[type="range"] {
+    width: 100%;
+    height: .6rem;
+    background-color: var(--light-gray);
+    border-radius: .96rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.progress-bar-music input[type="range"]:is(:focus) {
+    outline: 0;
+}
+
+/* WEBKIT */
+
+.progress-bar-music input[type="range"]::-webkit-slider-thumb {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: url("../img/boxe.png") no-repeat center center / cover;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* MOZILLA */
+
+.progress-bar-music input[type="range"]::-moz-range-thumb {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: url("../img/boxe.png") no-repeat center center / cover;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* MICROSOFT */
+
+.progress-bar-music input[type="range"]::-ms-thumb {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: url("../img/boxe.png") no-repeat center center / cover;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .96rem;
+    font-size: 1.44045rem;
+    opacity: .7;
+}
+
+/* ======================================================================== */
+
+/* ==========
+   CARD "ONE"
+   ==========
+*/
+
+.card.one {
+    grid-area: A;
+    padding: 5rem 3.84119rem;
+}
+
+.card.one .top {
+    flex-direction: column;
+    align-items: normal;
+}
+
+.card-img.one {
+    background: url("https://placehold.it/190") no-repeat center center / cover;
+    height: 19.0rem;
+    width: 19.0rem;
+}
+
+.card.one .middle .card-buttons {
+    gap: 5.0rem;
+}
+
+/* ======================================================================== */
+
+/* ===========
+   CARD "TWO"
+   AND "THREE"
+   ===========
+*/
+
+.card.two,
+.card.three {
+    padding: 2.881rem;
+}
+
+.card.two {
+    grid-area: B;
+}
+
+.card.three {
+    grid-area: C;
+}
+
+.card-img.two,
+.card-img.three {
+    background: url("https://placehold.it/84") no-repeat center center / cover;
+    height: 8.4rem;
+    width: 8.4rem;
+}
+
+.card.two .middle .card-buttons,
+.card.three .middle .card-buttons {
+    justify-content: space-evenly;
+}
+
+/* ======================================================================== */
+
+/* ==============
+   RESPONSIVENESS
+   ==============
+*/
+
+@media (max-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: max-content;
+        margin: auto;
+        height: auto;
+        padding: 6.0rem 0;
+    }
+
+    .card {
+        width: max-content;
+    }
+}
