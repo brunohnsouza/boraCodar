@@ -9,7 +9,8 @@
 <p align="center">
   <a href="#tecnologias">Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#ideias">Ideias realizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#projeto">Projeto</a>
+  <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#layout">Layout</a>
 </p>
 
 <p align="center">
@@ -40,6 +41,10 @@
 <h2 id="projeto">💻 <b>Projeto:</b></h2>
 
 - [Veja o projeto online](https://rockymusicplayer.netlify.app/)
+
+<h2 id="layout">🎨 <b>Layout:</b></h2>
+
+- [Figma do projeto](https://www.figma.com/community/file/1195050524500542670/%23boraCodar---Desafio-1)
 
 <br>
 
