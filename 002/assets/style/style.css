@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --blue-color: #21898f;
+    --orange-color: #DC905F;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+   height: 100%;
+}
+
+/* ======================================================================== */
+
+/* CSS TRICKS */
+
+.sr-only {
+    position: absolute;
+    width: 0.625rem;
+    height: 0.625rem;
+    padding: 0;
+    margin: -0.625rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border-width: 0;
+    white-space: nowrap;
+}
+
+/* ======================================================================== */
+
+/* ===========
+   BIKE (LEFT)
+   ===========
+*/
+
+ .left {
+    position: relative;
+ }
+
+ .left .svg-control {
+    position: absolute;
+    right: 11.14%;
+    left: 81.51%;
+    top: 1.8%;
+    bottom: 86.12%;
+ }
+
+ .left .svg-control label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .left .svg-control label:is(:hover) img {
+    cursor: pointer;
+ }
+
+ .bike {
+   width: 44.9rem;
+   height: 25.3rem;
+ }
+
+/* ======================================================================== */
+
+ /* 
+   ============
+   INFO (RIGHT)
+   ============
+*/
+
+ .right .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+ }
+
+ .right h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.0rem;
+    color: var(--blue-color);
+    text-transform: uppercase;  
+ }
+
+ .right h1 {
+    font-family: 'Crimson Pro';
+    font-weight: 600;
+    font-size: 3.2rem;
+    color: var(--blue-color);
+ }
+
+ .right p {
+    font-family: 'Lato';
+    font-weight: 400;
+    color: var(--blue-color);
+    margin-bottom: 2.0rem;
+ }
+
+ .right button {
+    position: relative;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;  
+    color: var(--blue-color);
+    padding: .8rem 1.6rem;
+    border: 0.05rem solid var(--blue-color);
+    border-radius: 99.9rem;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: background .2s ease-in-out, color .2s ease-in-out;
+ }
+ .right button:is(:hover) {
+    color: #fff;
+    background-color: var(--blue-color);
+ }
+
+ .right button::before {
+   content: attr(data-count);
+   background-color: var(--orange-color);
+   font-size: 1.2rem;
+   font-family: 'Lato';
+   font-weight: 400;
+   color: #FFF;
+   min-width: 1.8rem;
+   min-height: 1.8rem;
+   position: absolute;
+   top: -.9rem;
+   right: .5rem;
+   border-radius: 50%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* ======================================================================== */
+
+/* ==============
+   RESPONSIVENESS
+   ==============
+*/
+
+ @media (max-width: 800px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bike {
+      width: 40.0rem;
+      height: 20.0rem;
+    }
+
+    .right button {
+      width: 100%;
+   }
+}
