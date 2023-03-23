@@ -46,5 +46,12 @@
             <td align="center">
             <a href="01"><img width="300px" src="./001/.github/musicPlayer.png" /></a></td>
         </tr>
+        <tr>
+            <td>002</td>
+            <td><a href="./002">Card de produto</a></td>
+            <td>23/03/23</td>
+            <td align="center">
+            <a href="01"><img width="300px" src="./002/.github/productCard.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
