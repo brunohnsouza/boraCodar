@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --table-color-primary: #1C162C;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #0B0911;
+}
+
+main {
+    display: grid;
+    place-content: center;
+    gap: 3.2rem;
+    margin: 10.7rem auto;
+    width: min(85vw, 100%);
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+    height: .5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color:#0B0911;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #D9CDF7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: .87;
+}
+
+/* ======================================================================== */
+
+/* 
+    ======
+    GLOBAL 
+    ======
+*/
+
+.headline h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #FFF;
+}
+
+.headline p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.92059rem;
+    line-height: 2.3rem;
+    color: #FFF;
+    opacity: 0.67;
+}
+ 
+button {
+    all: unset;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 2.4rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #FFF;
+
+    transition: background .2s ease-in-out;
+}
+
+.disable {
+    opacity: 0.56;
+    cursor: not-allowed;
+}
+
+.movable {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    cursor: move;  
+}
+
+.focus {
+    border: .2rem solid #D9CDF7;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin: auto;
+    cursor: wait;
+}
+
+@keyframes loading {
+    to {transform: rotate(360deg);}
+  }
+
+.loading img {
+    animation: loading 1.2s linear infinite;
+}
+
+/* ======================================================================== */
+
+/* 
+    =======
+    BUTTONS
+    =======
+*/
+
+/* PRIMARY */
+
+.primary-button,
+.primary-button.disable,
+.primary-button.loading,
+.primary-button.movable {
+    background-color: #8257E5;
+}
+
+.primary-button.hover {
+    background-color: #9674E6;
+}
+
+/* SECUNDARY */
+
+.secundary-button,
+.secundary-button.disable,
+.secundary-button.loading,
+.secundary-button.movable {
+    background-color: #3C3748;
+}
+
+.secundary-button.hover {
+    background-color: #6A617F;
+}
+
+/* TERTIARY */
+
+.terriary-button,
+.terriary-button.hover,
+.terriary-button.focus,
+.terriary-button.disable,
+.terriary-button.loading,
+.terriary-button.movable {
+    background-color: transparent;
+}
+
+/* ======================================================================== */
+
+/* 
+    ========
+    HEADLINE 
+    ========
+*/
+
+.headline {
+    margin-bottom: 6.8rem;
+}
+
+.headline h1 {
+    margin-bottom: .4rem;
+}
+
+.headline p {
+    max-width: 80.8rem;
+}
+
+/* ======================================================================== */
+
+/* 
+    =====
+    TABLE 
+    =====
+*/
+
+.table-buttons table {
+    all: unset;
+    text-align: center;
+}
+
+.table-buttons table thead th,
+.table-buttons table tbody tr td:nth-child(1) {
+    background-color: var(--table-color-primary);
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.table-buttons table thead th:nth-child(1) {
+    border-top-left-radius: .8rem;
+}
+
+.table-buttons table thead th:nth-child(5) {
+    border-top-right-radius: .8rem;
+    border-right: .6rem solid var(--table-color-primary);
+}
+
+.table-buttons table tbody tr:nth-child(6) td:nth-child(1) {
+    border-bottom-left-radius: .8rem;
+}
+
+.table-buttons table tbody tr:nth-child(6) td:nth-child(5) {
+    border-bottom-right-radius: .8rem;
+}
+
+.table-buttons table tbody tr td:nth-child(5) {
+    border-right: .6rem solid var(--table-color-primary);
+}
+
+.table-buttons table tbody tr:nth-child(6) td {
+    border-bottom: .7rem solid var(--table-color-primary);
+}
+
+.table-buttons table thead th {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    padding: 2.4rem 1.6rem;
+    height: 6.4rem;
+}
+
+.table-buttons table thead th:nth-child(2),
+.table-buttons table thead th:nth-child(3),
+.table-buttons table thead th:nth-child(4),
+.table-buttons table thead th:nth-child(5) {
+    height: 3.3rem;
+}
+
+.table-buttons table thead th:nth-child(2) {
+    width: 23.0rem;
+}
+
+.table-buttons table thead th:nth-child(3) {
+    width: 23.3rem;
+}
+
+.table-buttons table thead th:nth-child(4) {
+    width: 20.3rem;
+}
+
+.table-buttons table thead th:nth-child(5) {
+    width: 8.4rem;
+}
+
+.table-buttons table tbody tr:nth-child(1) td,
+.table-buttons table tbody tr:nth-child(2) td,
+.table-buttons table tbody tr:nth-child(3) td,
+.table-buttons table tbody tr:nth-child(4) td,
+.table-buttons table tbody tr:nth-child(5) td,
+.table-buttons table tbody tr:nth-child(6) td {
+    padding: 3.2rem;
+}
+
+.table-buttons table tbody tr td:nth-child(1) {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+/* ======================================================================== */
+
+/* ==============
+   RESPONSIVENESS
+   ==============
+*/
+
+@media (max-width: 1100px) {
+    .table-buttons {
+        overflow-x: scroll;
+    }
+}
+
+
