@@ -7,6 +7,7 @@
 </p>
 
 <p align="center">
+  <a href="#objetivo">Objetivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#ideias">Ideias realizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -20,6 +21,10 @@
 <p align="center">
   <img alt="Music PLayer Preview" src=".github/musicPlayer.png">
 </p>
+
+<h2 id="objetivo">🚀 <b>Objetivo:</b></h2>
+
+- Desenvolva o player conforme especificado utilizando as tecnologias da sua preferência. Você pode adicionar outros detalhes, como animações.
 
 <h2 id="tecnologias">🔧 <b>Ferramentas:</b></h2>
 

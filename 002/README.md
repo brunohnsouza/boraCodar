@@ -7,6 +7,7 @@
 </p>
 
 <p align="center">
+  <a href="#objetivo">Objetivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#ideias">Ideias realizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -20,6 +21,10 @@
 <p align="center">
   <img alt="Product Card Preview" src=".github/productCard.png">
 </p>
+
+<h2 id="objetivo">🚀 <b>Objetivo:</b></h2>
+
+- Desenvolva o card de produto conforme especificado utilizando as tecnologias da sua preferência. O arquivo do Figma contém um protótipo e o link para baixar o arquivo .gif a ser utilizado. 
 
 <h2 id="tecnologias">🔧 <b>Ferramentas:</b></h2>
 

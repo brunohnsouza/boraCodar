@@ -21,7 +21,7 @@
   <img alt="Buttons and Cursors Preview" src=".github/ButtonsCursors.png">
 </p>
 
-<h2 id="tecnologias">🚀 <b>Objetivo:</b></h2>
+<h2 id="objetivo">🚀 <b>Objetivo:</b></h2>
 
 - Desenvolva uma tela de documentação de botões que possui uma área de pré-visualização dos mesmos. Os estados dos botões e os cursores adequados devem ser exibidos.
 
