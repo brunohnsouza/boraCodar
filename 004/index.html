@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Souza" />
+    <meta name="description" content="Chat mobile e desktop do desafio #boraCodar da Rocketseat."/>
+    <meta name="keywords" content="Chat, metereologia, clima, Front-end">
+    <title>Chat | #boraCodar</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <main>
+        <section id="top">
+            <div id="headline">
+                <div id="avatar-info-wrapper">
+                    <div id="avatar"></div>
+                    <div id="info">
+                        <h2>Cecilia Sassaki</h2>
+                        <p>Online</p>
+                    </div>
+                </div>
+                <div id="icons">
+                    <div class="svg" id="trash" title="Limpar conversa"></div>
+
+                    <div id="theme" title="Trocar o tema da página">
+                        <input class="sr-only" type="checkbox" id="dark">
+                        <label for="dark">
+                            <div id="theme-icon" class="svg"></div>
+                        </label>
+                    </div>
+                </div>
+            </div> 
+
+            <span class="time current">Hoje&nbsp;<span class="current-hour"></span></span>
+        </section>
+        
+        <section id="middle">
+            <div class="messages">
+                <ul></ul>
+            </div>
+        </section>
+        
+        <section id="bottom">
+            <form>
+                <div id="input-wrapper">
+                    <label class="sr-only" for="message">Mensagem</label>
+                    <input type="text" name="message" id="message" placeholder="Digite sua mensagem..." title="Digite sua mensagem..." autocomplete="off">
+                    <button>
+                        <i class="uil uil-message"></i>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="./assets/scripts/index.js" type="module"></script>
+</body>
+</html>

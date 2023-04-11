@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --bg-color: #1A1924;
+    --text-color: #E1E1E6;
+    --input-color: #282843;
+    --icon-theme-url: url("../img/sun.svg");
+    --icon-trash-url: url("../img/trash-white.svg");
+    font-size: 62.5%;
+}
+
+.dark {
+    --bg-color: #E5E5E5;
+    --text-color: #1A1924;
+    --input-color: #F1F1F1;
+    --icon-theme-url: url("../img/moon.svg");
+    --icon-trash-url: url("../img/trash-black.svg");
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+
+    transition: all .2s ease-in-out;
+}
+
+/* CSS TRICKS */
+
+.sr-only {
+    position: absolute;
+    width: 0.625rem;
+    height: 0.625rem;
+    padding: 0;
+    margin: -0.625rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border-width: 0;
+    white-space: nowrap;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 3.2rem 0;
+    width: min(90vw, 100%);
+    height: 100%;
+}
+
+/* ======================================================================== */
+
+/* ============
+   GLOBAL STYLE
+   ============
+*/
+
+button {
+    all: unset;
+}
+
+ul {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: .4rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color:var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb:is(:hover) {
+  opacity: .87;
+}
+
+.time {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: var(--text-color);
+    white-space: nowrap;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: .4rem 0;
+    width: 2.0rem;
+    height: 2.0rem;
+}
+.icon.temp {
+    background: url("../img/temperature-half.svg") no-repeat center/cover;
+}
+.icon.weather {
+    background: url("../img/cloud-sun-rain.svg") no-repeat center/cover;
+}
+.icon.humidity {
+    background: url("../img/tear.svg") no-repeat center/cover;
+}
+.icon.wind {
+    background: url("../img/wind.svg") no-repeat center/cover;
+}
+.icon.visibility {
+    background: url("../img/eye.svg") no-repeat center/cover;
+}
+.icon.clouds {
+    background: url("../img/cloud.svg") no-repeat center/cover;
+}
+
+#top {
+    margin-bottom: 3.0rem;
+}
+
+#middle {
+    height: 100%;
+    max-height: 80vh;
+    overflow-y: scroll;
+    padding: 2.4rem .5rem;
+}
+
+#bottom form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.4rem;
+}
+
+/* ======================================================================== */
+
+/* ========
+   HEADLINE
+   ========
+*/
+
+#headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#avatar-info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+#headline #avatar {
+    width: 4.8rem;
+    height: 4.8rem;
+    background: url("https://randomuser.me/api/portraits/women/50.jpg") no-repeat center/cover;
+    border-radius: 50%;
+}
+
+#headline #info h2 {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin-bottom: .4rem;
+    color: var(--text-color);
+}
+
+#headline #info p::before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: .8rem;
+    height: .8rem;
+    background-color: #00B37E;
+    margin-right: .4rem;
+}
+
+#headline #info p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #00B37E;
+}
+
+#headline #icons {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+#headline #trash {
+    width: 2.4rem;
+    height: 2.4rem;
+    background: var(--icon-trash-url) no-repeat center/cover;
+}
+
+#headline #theme-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    background: var(--icon-theme-url) no-repeat center/cover;
+}
+
+#headline .svg:is(:hover) {
+    cursor: pointer;
+    opacity: .87;
+}
+
+.time.current {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.4rem;
+}
+
+/* ======================================================================== */
+
+/* ======
+   MIDDLE
+   ======
+*/
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 3.0rem;
+}
+
+.message-received,
+.message-send {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+    padding: .5rem 0;
+}
+
+.message-received {
+    align-items: flex-start;
+}
+
+.message-send {
+    align-items: flex-end;
+}
+
+.message-received p {
+    background-color: #633BBC;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 1.4rem;
+    min-height: 50%;
+    max-width: 70%;
+    width: fit-content;
+    border-radius: 0 .8rem .8rem .8rem;
+    color: #E1E1E6;
+    overflow-wrap: break-word;
+}
+
+.message-send p {
+    background-color: #07847E;
+    font-size: 1.2rem;
+    padding: 1.4rem;
+    line-height: 1.4rem;
+    min-height: 50%;
+    max-width: 70%;
+    width: fit-content;
+    border-radius: .8rem .8rem 0 .8rem;
+    color: #E1E1E6;
+    overflow-wrap: break-word;
+}
+
+/* ======================================================================== */
+
+/* ======
+   BOTTOM
+   ======
+*/
+
+#bottom form #input-wrapper {
+    height: 5.2rem;
+    width: 100%;
+    padding: 1.4rem 2.4rem;
+    border-radius: 99.9rem;
+    background-color: var(--input-color);
+    box-shadow: 0 .2rem .2rem 0 rgba(0, 0, 0, 0.12),
+    0 .3rem .1rem -.2rem rgba(0, 0, 0, 0.12),
+    0 .1rem .5rem 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#bottom form input {
+    all: unset;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    width: 100%;
+    height: 100%;
+    border: none;
+    caret-color: #07847E;
+    color: var(--text-color);
+    overflow-wrap: break-word;
+}
+
+#bottom form input:is(:focus) {
+    outline: none;
+}
+
+#bottom form input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    opacity: .8;
+    text-transform: none;
+}
+
+#bottom form button {
+    position: absolute;
+    right: 2.4rem;
+    bottom: 1.2rem;
+}
+
+#bottom form i {
+    font-size: 2.4rem;
+    color: var(--text-color);
+}
+
+#bottom form i:is(:hover) {
+    cursor: pointer;
+    opacity: .87;
+}
