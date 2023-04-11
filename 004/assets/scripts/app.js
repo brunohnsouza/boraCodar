@@ -45,7 +45,7 @@ const app = {
             initialMessage.innerHTML = `
             <div class="message-received">
                 <span class="time">Cecilia -&nbsp;<span class="current-hour">${getCurrentHour()}</span></span>
-                <p>Seja bem vindo(a)! Aqui você será capaz de encontrar dados metereológicos de cidades de uma forma simples! De qual cidade gostaria de saber essas informações? 🌧️ 🌞</p>
+                <p>Seja bem vindo(a)! Aqui você será capaz de encontrar dados meteorológicos de cidades de uma forma simples! De qual cidade gostaria de saber essas informações? 🌧️ 🌞</p>
             </div>`
     
             setTimeout(() => {
