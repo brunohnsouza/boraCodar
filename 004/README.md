@@ -36,7 +36,7 @@
 
 <h2 id="ideias">💡  <b>Ideias:</b></h2>
 
-- Chat funcional para saber dados metereológicos da cidade que desejas! :)
+- Chat funcional para saber dados meteorológicos da cidade que desejas! :)
 
 <h2 id="projeto">💻 <b>Projeto:</b></h2>
 
