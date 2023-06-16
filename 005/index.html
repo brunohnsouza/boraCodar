@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Souza" />
+    <meta name="description" content="Calculadora do desafio #boraCodar da Rocketseat."/>
+    <meta name="keywords" content="Calculadora, matemática, Front-end">
+    <title>Calculadora | #boraCodar</title>
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/responsiveness.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <main id="calc__container">
+        <section id="calc__container__top">
+            <p id="calc__container__top__previous-operation"></p>
+
+            <div id="calc__container__top__current-operation">
+                <div id="calc__container__top__current-operation__equal-signal" class="d-none"><i class="ph ph-equals"></i></div>
+                
+                <p id="calc__container__top__current-operation__text"></p>
+            </div>
+        </section>
+
+        <table id="calc__container__bottom">
+            <tbody>
+                <tr>
+                    <td class="button operation clear-current">CE</td>
+                    <td class="button operation clear-all">C</td>
+                    <td class="button operation clear"><i class="ph ph-backspace"></i></td>
+                    <td class="button purple operation divide"><i class="ph ph-divide"></i></td>
+                </tr>
+
+                <tr>
+                    <td class="button">7</td>
+                    <td class="button">8</td>
+                    <td class="button">9</td>
+                    <td class="button purple operation multiplication"><i class="ph ph-x"></i></td>
+                </tr>
+
+                <tr>
+                    <td class="button">4</td>
+                    <td class="button">5</td>
+                    <td class="button">6</td>
+                    <td class="button purple operation minus"><i class="ph ph-minus"></i></td>
+                </tr>
+
+                <tr>
+                    <td class="button">1</td>
+                    <td class="button">2</td>
+                    <td class="button">3</td>
+                    <td class="button purple operation sum"><i class="ph ph-plus"></i></td>
+                </tr>
+
+                <tr>
+                    <td class="button operation plus-minus"><i class="ph ph-plus-minus"></i></td>
+                    <td class="button">0</td>
+                    <td class="button">.</td>
+                    <td class="button purple-light operation equal"><i class="ph ph-equals"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script type="module" src="./src/scripts/main.js"></script>
+</body>
+</html>
