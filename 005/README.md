@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img alt="Calculator Preview" src=".github/preview.jpeg">
+  <img alt="Calculator Preview" src=".github/calculadora.png">
 </p>
 
 <h2 id="objetivo">🚀 <b>Objetivo:</b></h2>
