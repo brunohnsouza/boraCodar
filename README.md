@@ -72,7 +72,7 @@
             <td><a href="./005">Calculadora</a></td>
             <td>16/06/23</td>
             <td align="center">
-            <a href="005"><img width="300px" src="./005/.github/preview.jpeg" /></a></td>
+            <a href="005"><img width="300px" src="./005/.github/calculadora.png" /></a></td>
         </tr>
     </tbody>
 </table></p>
