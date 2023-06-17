@@ -47,7 +47,7 @@
 
 <h2 id="projeto">💻 <b>Projeto:</b></h2>
 
-- [Veja o projeto online]() `Ainda não disponível`
+- [Veja o projeto online](https://rocketcalculadora.netlify.app/)
 
 <h2 id="layout">🎨 <b>Layout:</b></h2>
 
