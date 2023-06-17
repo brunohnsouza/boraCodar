@@ -8,6 +8,7 @@ export const calculator = {
     addDigit(digit) {
         if(digit === "." && elements.currentOperationText.innerText.includes(".")) return;
 
+        elements.equalSignal.classList.add("d-none");
         this.currentOperation = digit;
         this.updateDisplay();
     },
@@ -72,6 +73,7 @@ export const calculator = {
         } else {
             if (previous === 0) operationValue = current;
 
+            elements.equalSignal.classList.add("d-none");
             elements.previousOperationText.innerText = `${operationValue} ${operation}`;
             elements.currentOperationText.innerText = "";
 
