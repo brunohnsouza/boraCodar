@@ -36,7 +36,7 @@
                 </p>
             </th>
             <th align="center">
-                <img width="300" height="1">
+                <img width="200" height="1">
                 <p> 
                     <small>
                     CAPA
@@ -54,7 +54,7 @@
             <td align="center">18/03/23</td>
             <td align="center">
                 <a href="./001">
-                    <img width="300" src="./001/.github/musicPlayer.png" />
+                    <img width="200" src="./001/.github/musicPlayer.png" />
                 </a>
             </td>
         </tr>
@@ -66,7 +66,7 @@
             <td align="center">23/03/23</td>
             <td align="center">
                 <a href="./002">
-                    <img width="300" src="./002/.github/productCard.png" />
+                    <img width="200" src="./002/.github/productCard.png" />
                 </a>
             </td>
         </tr>
@@ -78,7 +78,7 @@
             <td align="center">27/03/23</td>
             <td align="center">
                 <a href="./003">
-                    <img width="300" src="./003/.github/ButtonsCursors.png" />
+                    <img width="200" src="./003/.github/ButtonsCursors.png" />
                 </a>
             </td>
         </tr>
@@ -90,7 +90,7 @@
             <td align="center">11/04/23</td>
             <td align="center">
                 <a href="./004">
-                    <img width="300" src="./004/.github/chat.png" />
+                    <img width="200" src="./004/.github/chat.png" />
                 </a>
             </td>
         </tr>
@@ -102,7 +102,7 @@
             <td align="center">16/06/23</td>
             <td align="center">
                 <a href="./005">
-                    <img width="300" src="./005/.github/calculadora.png" />
+                    <img width="200" src="./005/.github/calculadora.png" />
                 </a>
             </td>
         </tr>
