@@ -20,7 +20,7 @@
                 </p>
             </th>
             <th align="center">
-                <img width="400" height="1"> 
+                <img width="200" height="1"> 
                 <p> 
                     <small>
                         TÍTULO
