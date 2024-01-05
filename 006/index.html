@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bruno Souza" />
+    <meta
+      name="description"
+      content="Cartão de embarque do desafio #boraCodar da Rocketseat."
+    />
+    <meta name="keywords" content="Cartão, embarque, Front-end" />
+    <link rel="stylesheet" href="./src/style/global.css" />
+    <link rel="stylesheet" href="./src/style/responsiveness.css" />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Cartão de embarque | #boraCodar</title>
+  </head>
+
+  <body>
+    <main id="app">
+      <h1>Cartão de embarque</h1>
+
+      <div class="container">
+        <flight-info
+          voo="rs995"
+          date="23/05/2023"
+          departure="São Paulo, Brasil"
+          departure-airport="gru"
+          boarding-time="17:00"
+          arrival="São Francisco, EUA"
+          arrival-airport="sfo"
+          arrival-time="04:48"
+        ></flight-info>
+
+        <passanger-info passanger="Bruno Souza" seat="28A"></passanger-info>
+
+        <boarding-info
+          boarding-time="16:15"
+          terminal="2"
+          gate="15"
+          src-qr="./assets/qr-code.svg"
+          alt-qr="QR Code"
+          boarding-group="3"
+        ></boarding-info>
+      </div>
+
+      <p>
+        Qualquer problema procure o balcão de atendimento da sua companhia aérea
+      </p>
+    </main>
+
+    <script src="./src/scripts/main.js" type="module" defer></script>
+  </body>
+</html>

@@ -106,5 +106,17 @@
                 </a>
             </td>
         </tr>
+        <tr>
+            <td align="center">006</td>
+            <td align="center">
+                <a href="./006">Cartão de embarque</a>
+            </td>
+            <td align="center">05/01/24</td>
+            <td align="center">
+                <a href="./006">
+                    <img width="200" src="./006/.github/preview.png" />
+                </a>
+            </td>
+        </tr>
     </tbody>
 </table>
