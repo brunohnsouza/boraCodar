@@ -27,8 +27,7 @@ body {
   display: grid;
   place-content: center;
   background: linear-gradient(168deg, #8257e5 0%, #271a45 100%) no-repeat fixed;
-  height: 100dvh;
+  min-height: 100vh;
   font-size: 1.6rem;
   font-family: "Rubik", sans-serif;
-  margin: 7.8rem 0;
 }

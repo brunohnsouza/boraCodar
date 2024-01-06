@@ -66,10 +66,10 @@ export class PassangerInfo extends HTMLElement {
             align-items: center;
             justify-content: space-between;
             border-bottom: 0.1rem dashed var(--color-black-32);
-            mask: var(--mask-middle);
-            -webkit-mask: var(--mask-middle);
             padding: 2.4rem 3.2rem;
             background-color: var(--color-white);
+            mask: var(--mask-middle);
+            -webkit-mask: var(--mask-middle);
         }
 
         .container__middle__passanger h2,
