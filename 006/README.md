@@ -63,7 +63,7 @@
 
 <h2 id="projeto">💻 <b>Projeto:</b></h2>
 
-- [Veja o projeto online](https://rocketcalculadora.netlify.app/)
+- [Veja o projeto online](https://cartaoembarqueboracodar.netlify.app/)
 
 <h2 id="layout">🎨 <b>Layout:</b></h2>
 
